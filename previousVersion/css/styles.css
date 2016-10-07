@@ -1,0 +1,248 @@
+body{
+  background-image: url("../images/frontPage2.jpg");
+
+
+}
+
+.navbar-default{
+    background-color:#3b444f;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:15px;
+    padding-right:15px;
+    font-size:18px;
+}
+
+.navbar .nav > li > a{
+  color:white;
+  font-size:22px;
+  font-family: 'Fredoka One', cursive;
+}
+
+.navbar .nav > li > a:hover{
+  color:#B0E0E6;
+}
+.navbar-right{
+    margin-top:8px;
+}
+
+.first-section{
+  margin-top:90px;
+  position:relative;
+  height: 600px;
+  margin-left:-15px;
+  padding:110px 50px 50px 100px;
+}
+
+.first-section h1{
+  font-family: 'Lilita One', cursive;
+  font-size:70px;
+  color: #37474f blue-grey darken-3 #0288d1;
+}
+.first-section h5{
+  font-family: 'Lilita One', cursive;
+  font-size:25px;
+  padding:20px;
+
+
+}
+
+.second-section{
+
+  position:relative;
+  height: 650px;
+  margin-left:-15px;
+  padding:150px 50px 50px 100px;
+}
+
+.home-text-2{
+  font-family: 'Lilita One', cursive;
+  font-size:70px;
+    color:#0288d1;
+}
+
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 260px;
+    background-color: #2F363F;
+}
+
+.footer-container-style{
+    margin-top: 20px;
+    margin-left:110px !important;
+    font-family: 'Fredoka One', cursive;
+}
+
+.footer-container-style h4{
+    color:#B0E0E6;
+}
+
+.footer-container-style ul{
+
+    list-style:none;
+}
+
+.footer-container-style a{
+    color:white;
+}
+
+.footer-endnote{
+    background-color: #2F363F;
+    color:white;
+    height:50px;
+    margin-top:42px;
+}
+
+.footer-endnote h5{
+    padding-top:20px !important;
+    font-family: arial;
+    font-weight: bold;
+}
+
+
+
+/*Datasets.php*/
+.dataset-instruction-style{
+    margin-top: 20px;
+    margin-left:110px;
+    font-family: 'Fredoka One', cursive;
+    color:black;
+}
+
+.dataset-instruction-style h1{
+    margin-left:-55px;
+    margin-top:90px;
+    margin-bottom:45px;
+    font-family: 'Lilita One', cursive;
+    font-size:70px;
+    color:	#0066cc;
+}
+
+.dataset-instruction-style h4{
+    font-size:25px;
+}
+
+.dataset-instruction-style li{
+    font-size: 17px;
+    font-family: 'Lilita One', cursive;
+    color: rgb(51,51,51);
+}
+
+#buttons {
+  padding-top: 50px;
+  text-align: center;
+  color: #fff;
+
+}
+
+.dataset-button{
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 22px;
+    text-decoration: none;
+    margin-top:10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    background-color: #55acee;
+    box-shadow: 0px 5px 0px 0px #3C93D5;
+    width:140px;
+    height:60px;
+    font-size: 15px;
+}
+
+.view-dataset-button{
+  margin-bottom: 140px;
+}
+
+.dataset-button:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+
+}
+
+.dataset-button:hover{
+    background-color: #55acee;
+    box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+
+
+.g-signout2{
+    width:120px;
+    height:35px;
+
+    font-size:12px;
+}
+
+/*Create datasets.php*/
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    margin-bottom:50px;
+    border:none;
+
+}
+
+.form-style{
+    margin-left: auto;
+    margin-right: auto;
+    width:40em;
+
+}
+
+.form-title{
+    color:#0288d1;
+    font-family: 'Fredoka One', cursive;
+}
+
+
+form div + div {
+    margin-top: 1em;
+}
+
+
+
+label{
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+}
+
+input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* To give the same size to all text field */
+    width: 500px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+}
+
+textarea{
+    height:100px;
+}
+
+
+
+
+/*viewDataset.php styling*/
+.display-datasets{
+  margin-left:300px;
+  background-color: white;
+  width: 800px;
+  height: 700px;
+}
