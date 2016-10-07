@@ -16,7 +16,7 @@ nav{
 
 .navSignIn{
   margin-top: 15px;
-  margin-right:70px;
+  margin-left:30px;
 }
 
 .navSignIn-side{
@@ -43,6 +43,7 @@ nav{
   color: #212121;
 }
 
+/*Footer styling*/
 .page-footer{
     height:289px;
 }
@@ -59,6 +60,27 @@ nav{
   margin-top:10px;
 }
 
-span{
-  margin-top:20px;
+
+/*Dataset.php styling*/
+.dataset-instruction-style{
+  color:white;
+}
+
+.dataset-instruction-style h2{
+    font-family: 'Fredoka One', cursive;
+}
+
+.datasetPg-btn{
+    width: 160px;
+    height:45px;
+    margin:4px;
+}
+
+.datasetPg-btn div{
+    margin-top:5px;
+}
+
+.inform-signin{
+  margin-top:-27px;
+  margin-left: 30px;
 }

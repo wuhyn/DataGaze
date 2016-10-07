@@ -17,8 +17,8 @@
 		      <ul class="navMaster right hide-on-med-and-down">
 		        <li><a class="navItem center-align" href="index.php">Home</a></li>
 		        <li><a class="navItem center-align" href="dataset.php">Datasets</a></li>
-		        <li><a class="navItem navFocus center-align" href="support.php">Support</a></li>
-		        <li><a class="navItem center-align" href="about.php">About</a></li>
+		        <li><a class="navItem center-align" href="support.php">Support</a></li>
+		        <li><a class="navItem navFocus center-align" href="about.php">About</a></li>
 						<div class="navSignIn right">
 						<li><div class="g-signin2"  id="sign-in" data-onsuccess="onSignIn"  style="width:130px; height:50px; font-size :1px;" onload="initial_state"></li>
 						<li><button href="#" onclick="signOut();" type="button" class="btnSignOut waves-effect waves-light btn #d32f2f red darken-2" id="sign-out">Sign Out</button></li>

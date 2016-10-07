@@ -38,9 +38,9 @@
 
 	        <br>
 	        <div class="row dataset-instruction-style">
-	            <h1 class="text-center">Working with datasets</h1>
+	            <h2 class="text-center">Working with datasets</h2>
 
-	            <div class="col-xs-6 col-sm-4">
+	            <div class="col m4">
 	                <h4>Create a dataset</h4>
 	                <ol>
 	                    <li>Insert general information.</li>
@@ -51,7 +51,7 @@
 
 	            </div>
 
-	            <div class="col-xs-6 col-sm-4">
+	            <div class="col m5">
 	                <h4>Explore a dataset</h4>
 	                <ol>
 	                    <li>Download the dataset</li>
@@ -60,10 +60,7 @@
 	                </ol>
 	             </div>
 
-	            <!-- Optional: clear the XS cols if their content doesn't match in height -->
-	            <div class="clearfix visible-xs-block"></div>
-
-	            <div class="col-xs-6 col-sm-4">
+	            <div class="col m3">
 	                <h4>Discuss</h4>
 	                <ol>
 	                    <li>Study it.</li>
@@ -74,10 +71,22 @@
 
 	        </div><!--Row-->
 	    </div><!--Container-->
+			<div class="container">
+					<div class="row dataset-instruction-style">
+						<h2>Do your thing.</h2>
+						<div id="inform-signin">
+							<i class="material-icons">info_outline</i>
+							<p class="inform-signin">If you want to submit a dataset, sign in.</p>
+						</div>
+					</div>
+			</div>
 
 	    <div class="datasetPageBtn center-align" id="buttons">
-	        <a href="createDataset.php" class="btn dataset-button" id="create-dataset-button">Create</a><br>
-	        <a href="viewDataset.php" class="btn dataset-button view-dataset-button">View</a>
+					<a href="createDataset.php" class="tooltipped waves-effect waves-light btn datasetPg-btn"
+					   data-position="top" data-delay="50" data-tooltip="Submit your own dataset page." id="create-dataset-button"><div>Create</div></a><br>
+					<a href="viewDataset.php" class=" tooltipped waves-effect waves-light btn datasetPg-btn"
+						 data-position="top" data-delay="50" data-tooltip="Browse for data." id="view-dataset-button"><div>View</div></a>
+
 	    </div>
 
 <?php

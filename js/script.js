@@ -4,7 +4,8 @@ $(document).ready(function(){
     $('#sign-out').hide();
     //Hide sidenav sign out button
     $('#sign-out-side').hide();
-
+    //Hide create-dataset-button
+    $('#create-dataset-button').hide();
 
     $(".button-collapse").sideNav();
 
@@ -26,6 +27,9 @@ function onSignIn(){
 
     //Show create-dataset-button if signed in
     $('#create-dataset-button').show();
+
+    //Hide reminder to sign-in-side
+    $('#inform-signin').hide();
 }
 
 function signOut() {

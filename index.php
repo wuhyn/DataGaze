@@ -48,7 +48,9 @@
          <div class="caption right-align">
            <h3>Having trouble?</h3>
            <h5 class="light grey-text text-lighten-3">We're here to help.</h5>
-					 <button type="button" class="btn dataset-button">Support</button>
+					 <a href="support.php" class=" tooltipped waves-effect waves-light btn datasetPg-btn"
+							data-position="bottom" data-delay="50" data-tooltip="Need help?" id="view-dataset-button"><div>Support</div></a>
+
          </div>
        </li>
      </ul>
