@@ -1,7 +1,17 @@
-body{
+html{
   background-image: url("../images/background.png");
-  background-repeat: no-repeat;
+  background-size: 100%;
 }
+
+body{
+  max-width:1800px;
+  width: 100%;
+  height: 80%;
+    margin: 0 auto;
+
+}
+
+/*Navbar related css*/
 .brand-logo{
   margin-left:40px;
 }
@@ -23,13 +33,6 @@ nav{
   margin: 20px 20px 20px 85px;
 }
 
-.btnSignOut{
-  height:50px;
-  width:130px;
-  margin-top:-18px;
-  font-size:14px;
-}
-
 .navItem{
   height:65px !important;
   width: 120px;
@@ -43,9 +46,25 @@ nav{
   color: #212121;
 }
 
+.dropdown-content {
+  margin-top:30px;
+  display: block;
+}
+
+.btnSetting{
+  height:50px;
+  width:130px;
+  margin-top:-18px;
+  font-size:14px;
+}
+
 /*Footer styling*/
-.page-footer{
-    height:289px;
+.master-footer{
+  position: relative;
+  bottom:0;
+  width:100%;
+  max-width:1800px;
+  margin-top:70px;
 }
 
 .page-footer h5{
@@ -53,17 +72,24 @@ nav{
 }
 
 .page-footer-container{
-  margin-top:20px;
+  height:180px;
+
 }
 
 .footer-copyright{
-  margin-top:10px;
+  margin-top:50px;
 }
 
+/*User Page*/
+.userPage{
+  width:650px;
+  margin-top: 70px;
+}
 
 /*Dataset.php styling*/
 .dataset-instruction-style{
   color:white;
+  margin-bottom:30px;
 }
 
 .dataset-instruction-style h2{
@@ -83,4 +109,21 @@ nav{
 .inform-signin{
   margin-top:-27px;
   margin-left: 30px;
+}
+
+form{
+  color:white;
+  width:520px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.form-title{
+    font-family: 'Fredoka One', cursive;
+}
+
+.createPg-btn {
+  width: 160px;
+  height:45px;
+
 }

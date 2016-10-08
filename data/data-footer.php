@@ -36,11 +36,10 @@
 
 <!--Import jQuery before materialize.js-->
 
-<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../js/materialize.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+<script type="text/javascript" src="../js/script.js"></script>
 
 </body>
 </html>
