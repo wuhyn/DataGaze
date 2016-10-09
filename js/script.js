@@ -52,8 +52,11 @@ function onSignIn(googleUser){
     //console.log('Name: ' + prof.getName());
     //console.log('Email: ' + prof.getEmail());
     //console.log('Picture: ' + prof.getImageUrl());
+
     document.getElementById('gemail').innerHTML = "Signed in as " + gemail;
     document.getElementById('gname').innerHTML =  "Hi " + gname + ",";
+
+
 
 
 }
@@ -65,8 +68,8 @@ function signOut() {
       console.log('User signed out.');
     });
     //When user is not signed in, show the button
-    location.reload();
-
+    //location.reload();
+    location.assign("../index.php");
     //Show create-dataset-button if signed in
     $('#create-dataset-button').hide();
 }

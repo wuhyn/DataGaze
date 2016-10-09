@@ -1,3 +1,4 @@
+<!--Head-->
 		<?php
 			require_once('data-header.php');
 		 ?>
@@ -21,7 +22,6 @@
 
     				//Stay and post in the same page.
     				if(isset($_POST['submit'])){
-
 
     				    // Escape user inputs for security
     				    $d_title = mysqli_real_escape_string($conn, $_POST['title']);
@@ -57,56 +57,56 @@
             <form id="submission" method="post" action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" >
 
                <div class="form-style col s9 m12">
+
     						 <h3 class="form-title">Create your dataset</h3>
                     <br>
     								<div class="input-field">
     								 <label for="title">Title:</label>
-    								 <input type="text" name="title" id="title" placeholder="Title of the Dataset." required/>
+    								 <input type="text" name="title" id="title" placeholder="Title of the Dataset." maxlength="40" required/>
     								</div>
 
-    								<div class="input-field">
-    								 <label for="creator">Creator</label>
-    								 <input type="text" name="creator" id="creator" placeholder="Your name." required/>
+										<div>
+    								 <label for="creator">Name:</label>
+    								 <input type="text" name="creator" id="creator" placeholder="Your Name." maxlength="40" required />
+									  </div>
+
+										<div class="input-field">
+    								 <label for="email">Email:</label>
+    								 <input type="email" name="email" id="email" placeholder="Your email." required/>
     								</div>
 
     								<div>
-    								 <label for="dates">Creation Date</label>
-    								 <input type="date" name="dates" id="dates" class="datepicker" placeholder="When the dataset was finalized."/>
+    								 <label for="dates">Creation Date:</label>
+    								 <input type="date" name="dates" id="dates" class="datepicker" placeholder="When the dataset was finalized." />
     								</div>
 
     								<div class="input-field">
     								 <label for="description">Description:</label>
-    								 <textarea name="description" id="description" class="materialize-textarea" placeholder="Description of dataset."></textarea>
+    								 <textarea name="description" id="description" class="materialize-textarea" placeholder="Description of dataset." maxlength="500"></textarea>
     								</div>
 
     								<div class="input-field">
-    								 <label for="context">Context:</label>
-    								 <textarea name="context" id="context" class="materialize-textarea" placeholder="Context of dataset."></textarea>
+    								 <label for="content">Content:</label>
+    								 <textarea name="content" id="content" class="materialize-textarea" placeholder="Content of dataset. " maxlength="500"></textarea>
     								</div>
 
     								<div class="input-field">
-    								 <label for="content">Content</label>
-    								 <textarea name="content" id="content" class="materialize-textarea" placeholder="Content of dataset."></textarea>
+    								 <label for="amount">Prize money (Competition data):</label>
+    								 <input type="number" name="amount" id="amount" value="0" min="0" max="10000" placeholder="Prize money (if any).">
     								</div>
 
-    								<div class="input-field">
-    								 <label for="amount">Prize money (Competition data)</label>
-    								 <input type="number" name="amount" id="amount" min="0" max="10000" placeholder="Prize money (if any).">
+										<!--Include image url and file url-->
+										<div class="input-field">
+    								 <label for="image">Image URL:</label>
+    								 <input type="text" name="image" id="image" placeholder="Image link to display in page." required/>
     								</div>
 
-                    <div class="file-field input-field">
-                        <label for="file_of_data">Include an image to represent the data.</label><br><br>
-                        <div class="btn waves-effect waves-light createPg-btn">
-                            <span>Choose File</span>
-                            <input type="file">
-                        </div>
-                        <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text">
-                        </div>
-                        <input type="file" id="files" name="file_of_data"/>
-                    </div>
-                    <br>
+										<div class="input-field">
+										 <label for="email">Download Link:</label>
+										 <input type="text" name="download" id="download" placeholder="Download link to display in page." required/>
+										</div>
 
+										<!--Submit button-->
                     <button id="submit-btn" class="btn waves-effect waves-light createPg-btn" type="submit" name="submit">
     									Submit<i class="material-icons right">send</i>
     								</button>

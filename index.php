@@ -11,7 +11,7 @@
 	<div class="slider first-section">
      <ul class="slides">
        <li>
-         <img src="images/background.jpeg" alt="library image"> <!-- random image -->
+         <img src="images/frontOne.jpeg" alt="library image"> <!-- random image -->
          <div class="caption left-align">
            <h3>Share Research Data!</h3>
            <h5 class="light grey-text text-lighten-3">Join our new community,<br> make new discoveries,<br>
