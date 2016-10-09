@@ -25,21 +25,23 @@
 
     				    // Escape user inputs for security
     				    $d_title = mysqli_real_escape_string($conn, $_POST['title']);
-    				    $d_creator = mysqli_real_escape_string($conn, $_POST['creator']);
+    				    $d_name = mysqli_real_escape_string($conn, $_POST['name']);
+    				    $d_email = mysqli_real_escape_string($conn, $_POST['email']);
     				    $d_creationDate = mysqli_real_escape_string($conn, $_POST['dates']);
     				    $d_description = mysqli_real_escape_string($conn, $_POST['description']);
-    				    $d_context = mysqli_real_escape_string($conn, $_POST['context']);
     				    $d_content = mysqli_real_escape_string($conn, $_POST['content']);
     				    $d_amount = mysqli_real_escape_string($conn, $_POST['amount']);
+    				    $d_image = mysqli_real_escape_string($conn, $_POST['image']);
+    				    $d_download = mysqli_real_escape_string($conn, $_POST['download']);
+
 
     				    // attempt insert query execution
-    				    $query = "INSERT INTO dataset (d_title, d_creator, d_creationDate, d_description, d_context, d_content, d_amount)
-    				    VALUES ('$d_title', '$d_creator', '$d_creationDate', '$d_description', '$d_context', '$d_content', '$d_amount')";
+    				    $query = "INSERT INTO dataset (d_title, d_name, d_email, d_creationDate, d_description, d_content, d_amount, d_image, d_download)
+    				    VALUES ('$d_title', '$d_name', '$d_email', '$d_creationDate', '$d_description', '$d_content', '$d_amount', '$d_image ', '$d_download')";
 
     				    if(mysqli_query($conn, $query)){
     				          echo "<br>Records added successfully.";
-                      //modal
-
+                      // after modal is displayed -> redirect
 
                       header("location: ../index.php");
     				    } else{
@@ -66,8 +68,8 @@
     								</div>
 
 										<div>
-    								 <label for="creator">Name:</label>
-    								 <input type="text" name="creator" id="creator" placeholder="Your Name." maxlength="40" required />
+    								 <label for="name">Name:</label>
+    								 <input type="text" name="name" id="name" placeholder="Your Name." maxlength="40" required />
 									  </div>
 
 										<div class="input-field">
