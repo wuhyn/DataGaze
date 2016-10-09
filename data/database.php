@@ -11,6 +11,6 @@ if(mysqli_connect_errno($conn)){
   echo 'Connection Failed.';
 }
 else{
-  echo "Database connection is good.";
+  //echo "Database connection is good.";
 }
  ?>

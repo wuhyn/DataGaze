@@ -87,7 +87,7 @@ nav{
   margin-top: 70px;
 }
 
-/*Dataset.php styling*/
+/*Create Dataset.php styling*/
 .dataset-instruction-style{
   color:white;
   margin-bottom:30px;
@@ -127,4 +127,18 @@ form{
   width: 160px;
   height:45px;
 
+}
+
+/*View Dataset Page styling*/
+.view-dataset-master{
+  margin-top: 50px;
+}
+
+.view-dataset-master h3{
+    font-family: 'Fredoka One', cursive;
+  color: white;
+}
+
+.view-dataset{
+  margin-top:50px;
 }
