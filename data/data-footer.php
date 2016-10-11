@@ -1,5 +1,5 @@
 <div class="master-footer">
-<footer class="page-footer orange darken-4">
+<footer class="page-footer">
   <div class="page-footer-container container">
     <div class = "row">
       <div class="col m5 s5">
@@ -32,7 +32,7 @@
   </div>
 
 </footer>
-</div>
+</div>>
 
 <!--Import jQuery before materialize.js-->
 

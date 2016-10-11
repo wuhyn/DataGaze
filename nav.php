@@ -7,7 +7,7 @@
 		</ul>
 
 		<nav>
-		    <div class="nav-wrapper	orange darken-3">
+		    <div class="nav-wrapper">
 		      <a href="#!" class="brand-logo left	">Logo</a>
 
 		      <a href="#mobile" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>

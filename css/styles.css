@@ -21,6 +21,10 @@ nav{
   height:85px;
 }
 
+.nav-wrapper{
+  	background-color:#e37e00;
+}
+
 .navMaster{
   margin-right:100px;
 }
@@ -61,11 +65,17 @@ nav{
 
 /*Footer styling*/
 .master-footer{
+  background-color:#e37e00;
   position: relative;
   bottom:0;
   width:100%;
   max-width:1800px;
   margin-top:70px;
+
+}
+
+.page-footer{
+  background-color:#e37e00 !important;
 }
 
 .page-footer h5{
@@ -75,10 +85,12 @@ nav{
 .page-footer-container{
   height:180px;
 
+
 }
 
 .footer-copyright{
   margin-top:50px;
+
 }
 
 /*User Page*/
@@ -136,9 +148,42 @@ form{
 
 .view-dataset-master h3{
     font-family: 'Fredoka One', cursive;
-  color: white;
+    color: white;
+}
+
+.view-dataset-tr{
+  background-color: #303f9f;
+  font-size:16px;
+  color:white;
+
 }
 
 .view-dataset{
   margin-top:50px;
+}
+
+.view-dataset-title{
+  width:200px;
+}
+
+.view-dataset-title a{
+  color: black;
+}
+
+/*Specific dataset page*/
+.card-content{
+
+  overflow:auto;
+}
+
+.dataset-pic{
+  margin-bottom:200px;
+}
+
+.dataset-body p{
+  font-size: 19px;
+}
+
+.dataset-body h5{
+  font-weight: bold;
 }

@@ -1,5 +1,6 @@
 <?php
 		require_once('data-header.php');
+		session_start();
  ?>
 		<title>Data Gazing</title>
 </head>
@@ -23,16 +24,14 @@
 			*/
 	?>
 
-
-
 		<div class="container view-dataset-master">
 			<h3>Community Dataset</h3>
-			<div class="blue lighten-5 view-dataset">
+			<div class="grey lighten-4 view-dataset">
 	      <table>
 	        <thead>
-	          <tr class="blue darken-1">
-	              <th data-field="id">Dataset Title</th>
-	              <th data-field="name">Description</th>
+	          <tr class="view-dataset-tr">
+	              <th class="center-align">Dataset Title</th>
+	              <th class="center-align">Description</th>
 	          </tr>
 	        </thead>
 
@@ -42,13 +41,21 @@
 						//Loop to display all the data
 						while($row = mysqli_fetch_assoc($retrieve)){
 							echo '<tr>';
-											echo '<td>' . $row['d_title'] . '</td>';
+
+											//Show title
+											echo '<td class="view-dataset-title center-align">' . '<a href="datasets.php?id= ' . $row['id'] . ' ">' . $row['d_title'] . '</a>' . '</td>';
+										 //Show description
 											echo '<td>' . $row['d_description'] . '</td>';
+
 							echo '</tr>';
 							$d_title = $row['d_title'];
 
+						}
 
-						}?>
+						//Close connection to database
+		    		$conn->close();
+
+						?>
 
 
 	        </tbody>
