@@ -11,5 +11,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
 		<!--Personal CSS import-->
 		<link rel="stylesheet" href="css/styles.css">
+		<!--Favicon-->
+		<link rel="icon" href="images/favicon.png" type="images/png">
 		<!--Google API import-->
 	  <meta name="google-signin-client_id" content="548107118361-5i5qb53t0jk30avq5cpaga38ajof4ku1.apps.googleusercontent.com">

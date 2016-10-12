@@ -32,6 +32,7 @@
 	          <tr class="view-dataset-tr">
 	              <th class="center-align">Dataset Title</th>
 	              <th class="center-align">Description</th>
+								<th class="center-align view-dataset-category-th">Category</th>
 	          </tr>
 	        </thead>
 
@@ -47,8 +48,16 @@
 										 //Show description
 											echo '<td>' . $row['d_description'] . '</td>';
 
+											if($row['d_amount'] == 0){
+												echo '<td class="view-dataset-title center-align">' . "Non-profit" . '</td>';
+											}
+
+											else{
+												echo '<td class="view-dataset-title center-align">' . "Prize money <br>$" . $row['d_amount'] . '</td>';
+											}
+
 							echo '</tr>';
-							$d_title = $row['d_title'];
+							//$d_title = $row['d_title'];
 
 						}
 

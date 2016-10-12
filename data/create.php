@@ -79,22 +79,22 @@
 
     								<div>
     								 <label for="dates">Creation Date:</label>
-    								 <input type="date" name="dates" id="dates" class="datepicker" placeholder="When the dataset was finalized." />
+    								 <input type="date" name="dates" id="dates" class="datepicker" placeholder="When the dataset was finalized." required/>
     								</div>
 
     								<div class="input-field">
     								 <label for="description">Description:</label>
-    								 <textarea name="description" id="description" class="materialize-textarea" placeholder="Description of dataset." maxlength="500"></textarea>
+    								 <textarea name="description" id="description" class="materialize-textarea" placeholder="Description of dataset." maxlength="500" required></textarea>
     								</div>
 
     								<div class="input-field">
     								 <label for="content">Content:</label>
-    								 <textarea name="content" id="content" class="materialize-textarea" placeholder="Content of dataset. " maxlength="500"></textarea>
+    								 <textarea name="content" id="content" class="materialize-textarea" placeholder="Content of dataset. " maxlength="500" required></textarea>
     								</div>
 
     								<div class="input-field">
     								 <label for="amount">Prize money (Competition data):</label>
-    								 <input type="number" name="amount" id="amount" value="0" min="0" max="10000" placeholder="Prize money (if any).">
+    								 <input type="number" name="amount" id="amount" value="0" min="0" max="10000" placeholder="Prize money (if any)." required>
     								</div>
 
 										<!--Include image url and file url-->

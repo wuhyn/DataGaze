@@ -19,9 +19,9 @@
               <p>There are links for help and troubleshooting below.</p>
             </div>
             <div class="card-action">
-              <a href="#">Datasets</a>
-              <a href="#">Help</a>
-              <a href="#">Log Out</a>
+              <a href="dataset.php">Datasets</a>
+              <a href="support.php">Help</a>
+              <a onclick="signOut();" href="#">Log Out</a>
             </div>
 
         </div>

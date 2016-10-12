@@ -8,7 +8,8 @@
 
 		<nav>
 		    <div class="nav-wrapper">
-		      <a href="#!" class="brand-logo left	">Logo</a>
+					<img src="../images/logo.png" alt="logo" class="brand-logo left" draggable="false">
+
 
 		      <a href="#mobile" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 		      <ul class="navMaster right hide-on-med-and-down">

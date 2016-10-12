@@ -158,12 +158,21 @@ form{
 
 }
 
+.view-dataset-tr th{
+  font-size:20px;
+}
+
+.view-dataset-category-th{
+  width:200px;
+}
+
 .view-dataset{
   margin-top:50px;
 }
 
 .view-dataset-title{
   width:200px;
+  font-weight: bold;
 }
 
 .view-dataset-title a{
